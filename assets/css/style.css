@@ -1,0 +1,28 @@
+.headHeader {
+    width: 960px;
+    overflow: auto;
+    padding-bottom: 30px;
+    height: 125px;
+    background-color: red;
+
+}
+
+h1 {
+    width: 20%;
+    background-color: rgba(7, 122, 117, 0.61);
+    padding: 20px;
+    color: orange;
+    float: left;
+    height: 100%;
+
+
+
+}
+
+nav {
+    margin-top: 20px;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+

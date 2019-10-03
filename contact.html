@@ -2,39 +2,52 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Contact Page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Lucas Aho's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="assets\css\style.css">
     </head>
-
+    
     <body>
-        <header>
-            <h1>Lucas Aho</h1>
-
-            <nav id="navHead">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="">Contact</a>                
-            </nav>
-        </header>
+            <div class="headBar" >
+                    <header class="headHeader">
+                        <h1>Lucas Aho</h1>
+        
+                        <nav>
+                            <div>
+                                <a class="quickNav" href="">About</a> 
+                        
+                                           
+                                <a class="quickNav" href="portfolio.html">Portfolio</a>
+                             
+                            
+                            
+                                <a id="specNav" href="contact.html">Contact</a>     
+                            </div>           
+                        </nav>
+                    </header>
+                </div>
 
         <section>
             <h2>Contact</h2>
             
-            <form method="post" action="contact.php">
-                Name
-                <textarea name="message"></textarea>
-                Email
-                <textarea name="message"></textarea>
-                Message
-                <textarea name="message"></textarea>
+            <form method="post" action="mailto:aholucas11@gmail.com" id="contactForm">
+                Name 
+                <br>
+                <textarea id= "nameIn" name="message"></textarea>
+                <br>
+                Email 
+                <br>
+                <textarea id = "mailIn" name="message"></textarea>
+                <br>
+                Message 
+                <br> 
+                <textarea id = "messageIn" name="message"></textarea>
+                <br>
                 <input type="submit">
             </form>
 
            
 
-            <div>
-                Long and funny statements that make me seem cool and helpful yo yo. 
-            </div>
+          
         </section>
 
 

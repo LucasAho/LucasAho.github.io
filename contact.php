@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact Page</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<?php
 
-    <body>
-        <header>
-            <h1>Lucas Aho</h1>
+if(isset($POST['submit']))
+{
+    //This page should not be accessed directly
+    echo "error; you need to submit the form!";
+}
+$name = $_POST['fName'];
+$visitor_email = $_POST['emailAdd'];
+$message = $_POST['messageIn'];
+ 
+//Validate First
+if(empty($name)||empty($visitor_email))
+{
+    echo "Please fill name and email";
+    exit;
+}
 
-            <nav id="navHead">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="">Contact</a>                
-            </nav>
-        </header>
+$email_from = 'aholucas11@gmail.com';
+$email_subject = "New form submission";
+$email_body = "You have recieved an email from the user $name.\n".
+    "email address: $visitor_email\n".
+    "Here is the message:\n $message".
 
-        <section>
-            <h2>Contact</h2>
+$to = "aholucas11@gmail.com";
+$headers = "From: $email_from \r\n";
 
-            <form method="post" action="contact.php">
-                <textarea name="message"></textarea>
-                <input type="submit">
-            </form>
-           
+//Send the email
+mail($to,$email_subject,$email_body,$headers);
 
-            <div>
-                Long and funny statements that make me seem cool and helpful yo yo. 
-            </div>
-        </section>
+?> 
 
-
-
-    </body>
-
-
-
-</html>

@@ -28,29 +28,26 @@
 
         <section>
             <h2>Contact</h2>
-            
-            <form method="post" action="mailto:aholucas11@gmail.com" id="contactForm">
-                Name 
-                <br>
-                <textarea id= "nameIn" name="message"></textarea>
-                <br>
-                Email 
-                <br>
-                <textarea id = "mailIn" name="message"></textarea>
-                <br>
-                Message 
-                <br> 
-                <textarea id = "messageIn" name="message"></textarea>
-                <br>
-                <input type="submit">
-            </form>
-
+            <div class= "pageBorder"></div> 
+            <div class= "conForm">
+                <form method="post" action="mailto:aholucas11@gmail.com" name="myemailform">
+                    <label for= "fName">Name</label>
+                    <input type="text" id="fName" name="fullname" placeholder="John Smith">
+                    <label for= "emailAdd">Email Address</label>
+                    <input type= "text" id="emailAdd" placeholder="example@gmail.com">
+                    <label for= "messageIn">Message</label>
+                    <textarea type= "text" id= "messageIn"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
            
 
           
         </section>
 
-
+        <footer class= "stickyFoot">
+            Copyright@
+        </footer>
 
     </body>
 
